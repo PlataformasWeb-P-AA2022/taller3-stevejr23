@@ -1,0 +1,18 @@
+*{	
+	align-content: center;
+	margin: 15px;
+	font-size: 10px
+}
+
+.mensaje{
+	color: black;
+	margin: 25px;
+	font-size: 25px
+}
+
+.dos{
+	background: orange;
+	border-bottom: 2px solid green;
+	margin: 10px;
+	font-size: 10px
+}
