@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Demo Jquery y JqueryUI</title>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-  </script>
-  </head>
-  <body>
-    
-    <div class="uno">
-     <p class="nombre">Nombre:</p>
-     <input id="nombre" type="text" name="Steve">
-     <p class="apellidos">Apellido:</p>
-     <input id="apellido" type="nom" name="Steve">
-     <p class="fecha">Fecha de nacimiento:</p>
-     <p><input id = "datepicker" type="text" id="datepicker"></p>
-     <p><button type="submit">Generar Mensaje</button></p>
-    </div>
 
-    <div>Datos Ingresados</div>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Demo Jquery y JqueryUI</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/estilos.css" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script>
-     $(document).ready(function() {
-      $( "#datepicker" ).datepicker();     
-      $( "button" ).click(function() {
-         var nombre = $('#nombre').val();
-         var apellidos = $('#apellido').val();
-         var fecha = $('#datepicker').val();
-         
-         console.log(nombre);
-         console.log(apellidos);
-         console.log(fecha);  
-         $('#mensajeFinal').append("Datos ingresados: <br>"+ nombre +"<br>" + apellidos);
-      });
+    $(function () {
+      $("#datepicker").datepicker();
     });
   </script>
+
+</head>
+
+<body>
+
+  <div class="prentacion">
+
+    <div class="uno">
+
+      <p class="nombre">Nombre:</p>
+      <input id="nombre" type="text">
+      <p class="apellidos">Apellido:</p>
+      <input id="apellido" type="text">
+      <p class="fecha">Fecha de nacimiento:</p>
+      <p><input id="datepicker" type="text" id="datepicker"></p>
+      <p><button type="submit">Generar Mensaje</button></p>
+    </div>
+
+    <h4 id="mensajeFinal" class="uno"></h4>
+
+  </div>
+
+</body>
+
+<script>
+
+  $(document).ready(function () {
+    $("#datepicker").datepicker();
+    $("button").click(function () {
+      var nombre = $('#nombre').val();
+      var apellidos = $('#apellido').val();
+      var fecha = $('#datepicker').val();
+
+      console.log(nombre);
+      console.log(apellidos);
+      console.log(fecha);
+
+      $('#mensajeFinal').append("Datos ingresados: <br>" +
+        nombre + "<br>" +
+        apellidos + "<br>" +
+        fecha + "<br>");
+
+    });
+  });
+
+</script>
+
 </html>

@@ -3,16 +3,26 @@
 	margin: 15px;
 	font-size: 10px
 }
+.uno{
+	background-color: rgb(118, 170, 230);
+	border: black 3px solid;
+	padding: 0%;
+	
+}
 
 .mensaje{
-	color: black;
-	margin: 25px;
-	font-size: 25px
+	background-color:rgb(255, 255, 255);
+	margin: 5px;
+	padding: 6px;
+	
 }
 
 .dos{
 	background: orange;
-	border-bottom: 2px solid green;
-	margin: 10px;
+	margin-top: 10px;
 	font-size: 10px
+}
+.comentario{
+	border-bottom: 2px solid green;
+	color:white;
 }

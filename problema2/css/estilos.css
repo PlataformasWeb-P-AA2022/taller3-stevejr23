@@ -1,11 +1,9 @@
-*{	
-	align-content: center;
-	margin: 15px;
-	font-size: 10px
+.prentacion{	
+	display: flex;
+    justify-content: space-around;
 }
 
-.mensaje{
-	color: black;
-	
+.uno{
+	margin: 50px;
 }
 
